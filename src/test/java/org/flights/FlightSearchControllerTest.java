@@ -1,4 +1,4 @@
-package org.trendoLand;
+package org.flights;
 
 import org.flights.controller.FlightSearchController;
 import org.flights.model.Flight;
@@ -14,8 +14,8 @@ import static org.mockito.Mockito.*;
 
 class FlightSearchControllerTest {
 
-    private FlightService flightService = mock(FlightService.class);
-    private FlightSearchController flightSearchController = new FlightSearchController(flightService);
+    final FlightService flightService = mock(FlightService.class);
+    final FlightSearchController flightSearchController = new FlightSearchController(flightService);
 
     @Test
     void testSearchFlights_WithoutSort() {
